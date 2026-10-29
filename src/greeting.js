@@ -4,4 +4,8 @@ function greet(name) {
 	return `Hello, ${name}!`
 }
 
-module.exports = { greet }
+function shout(name) {
+	return `${greet(name).toUpperCase()}!!`
+}
+
+module.exports = { greet, shout }

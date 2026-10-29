@@ -1,5 +1,6 @@
 const assert = require("assert")
-const { greet } = require("./src/greeting")
+const { greet, shout } = require("./src/greeting")
 
 assert.strictEqual(greet("Ana"), "Hello, Ana!")
-console.log("1 passing")
+assert.strictEqual(shout("Ana"), "HELLO, ANA!!!")
+console.log("2 passing")
